@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { codes } from '../assests/Code'
+import Mail2 from "../components/Mail2";
 const SendMessage = () => {
     const [selectedOptionBottomCountryCode, setSelectedOptionCountryCode] =
         useState()
@@ -60,7 +61,8 @@ const SendMessage = () => {
                 </p>
             </div>
             <div className='grid'>
-                <div className='first'>
+                <Mail2 />
+                {/* <div className='first'>
                     <div className='item'>
                         <input type='text' placeholder='Enter First Name' />
                     </div>
@@ -90,7 +92,7 @@ const SendMessage = () => {
                         options={amount}
                     />
                     <button>Submit!</button>
-                </div>
+                </div> */}
 
                 <p id='p'>
                     <input type='checkbox' name='' id='checkbo' for='p' />
