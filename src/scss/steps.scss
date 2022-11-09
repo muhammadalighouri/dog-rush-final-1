@@ -548,7 +548,7 @@
                     gap: 10px;
                     button {
                         height: 45px;
-                        border-radius: 100px;
+                        border-radius: 10px;
                         color: #fff;
                         border: 3px solid #0085ff;
                         background: #0085ff;
@@ -619,17 +619,23 @@
                             }
                         }
                         button {
-                            width: 200px;
-                            background: #034981;
-                            border: 0;
-                            margin-left: 10px;
-                            border-radius: 6px;
-                            border: 1px solid #034981;
-                            cursor: pointer;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 5px;
+                            width: 76px !important;
+                                background: #03498185;
+                                border: 0;
+                                margin-left: 10px;
+                                border-radius: 9px;
+                                border: 1px solid #034981;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 5px;
+                                font-size: 20px;
+                                position: absolute;
+                                top: 6px;
+                                right: 5px;
+                                height: 80%;
+                                text-transform: uppercase;
                         }
                     }
                 }
