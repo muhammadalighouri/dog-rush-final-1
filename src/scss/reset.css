@@ -1,0 +1,202 @@
+@import url('http://fonts.cdnfonts.com/css/mister-pixel-16');
+/* @font-face {
+  font-family: "lun";
+  src: url(./fonts/Webfont/THICCCBOI-Black.woff2);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Inter:wght@200;400;600;800;900&family=Josefin+Sans:wght@300;400;500;600;700&family=Kanit:wght@400;500;600&family=Koulen&family=Libre+Bodoni:wght@400;500;600;700&family=Luckiest+Guy&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Spectral:wght@200;300;400;500;600;700;800&family=Tapestry&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Chakra+Petch:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Manjari:wght@100;400;700&family=Montserrat:wght@200&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=PT+Mono&family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+/* font-family: 'Bungee', cursive;
+font-family: 'Coiny', cursive;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Koulen', cursive;
+font-family: 'Libre Bodoni', serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Spectral', serif;
+font-family: 'Tapestry', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Bakbak One',
+cursive;
+font-family: 'Catamaran',
+sans-serif;
+font-family: 'Chakra Petch',
+sans-serif;
+font-family: 'Lato',
+sans-serif;
+font-family: 'Manjari',
+sans-serif;
+font-family: 'Montserrat',
+sans-serif;
+font-family: 'Nunito',
+sans-serif;
+font-family: 'Paytone One',
+sans-serif;
+font-family: 'Poppins',
+sans-serif;
+font-family: 'PT Mono',
+monospace;
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Space Grotesk',
+sans-serif;
+font-family: 'Space Mono',
+monospace;
+*/
+/* font-family: 'Exo 2', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play-Regular';
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Play-Bold';
+    src: url('./font/Play-Bold.ttf');
+}
+@font-face {
+    font-family: 'Play-Regular';
+    src: url('./font/Play-Regular.ttf');
+}
+@font-face {
+    font-family: 'Barlow-medium';
+    src: url(./font/BarlowCondensed-Medium.ttf);
+}
+@font-face {
+    font-family: 'RFDewiExpanded';
+    src: url(./font/RFDewiExpanded-Regular.ttf);
+}
+h1,
+h2 {
+    font-family: 'Chakra Petch', sans-serif !important;
+    font-weight: 900;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+.bottomm {
+    position: relative;
+}
+.bottomm::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+button {
+    font-family: 'Barlow-medium' !important;
+
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+body {
+    background: #04111d !important;
+    overflow-x: hidden;
+}
+.bottom__bg,
+.top__bg {
+    position: relative;
+}
+.bottom__bg::before {
+    /* content: ""; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/images/background/sr5-bg.236f121c.jpg)
+        no-repeat center bottom/cover;
+    filter: brightness(0.5) hue-rotate(327deg);
+    background-size: cover;
+    z-index: -2;
+}
+.bottom__bg::after {
+    position: absolute;
+    /* content: ""; */
+    left: 0;
+    top: 0%;
+    width: 100%;
+    background: linear-gradient(0deg, transparent, #000);
+    z-index: -1;
+    right: 0;
+    height: 20%;
+}
+
+.top__bg::before {
+    /* content: ""; */
+    background: url(../../public/images/background/land-bg.4e7c74f0.jpg)
+        no-repeat center center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    filter: hue-rotate(317deg) brightness(1);
+    opacity: 0.9;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    overflow: unset !important;
+}
+
+/* Handle */
+
+.roadmap + .react-parallax {
+    background: black;
+}
+.roadmap + .react-parallax > img {
+    opacity: 0.2;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+button .active span {
+}
+
+.makeStyles-heading-2 {
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+@media (max-width: 570px) {
+    button {
+    }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -50px !important;
+    left: 0;
+    width: 100%;
+}

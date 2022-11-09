@@ -1,0 +1,113 @@
+@import './variable.scss';
+@import './media.scss';
+
+.vision {
+    padding: 90px 10px;
+    position: relative;
+    z-index: 2;
+
+    // background: #a71a11;
+    &::before {
+        content: '';
+        background: url(http://localhost:3000/static/media/bone.687cd2f188c770b40083.png)
+            no-repeat center center/cover;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 310px;
+        height: 310px;
+        filter: blur(5px);
+        opacity: 0.1;
+        transform: rotateX(180deg);
+    }
+    &::before {
+        content: '';
+        background: url(../../public/images/secondBg.svg) no-repeat center
+            center/cover;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 310px;
+        height: 310px;
+        z-index: -1;
+        filter: invert(1);
+        opacity: 0.1;
+    }
+
+    &::after {
+        content: '';
+        background: url(../../public/images/secondBg.svg) no-repeat center
+            center/cover;
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 240px;
+        height: 240px;
+        z-index: -1;
+        filter: invert(1);
+        opacity: 0.1;
+    }
+    .heading {
+        h1 {
+            position: relative;
+            text-align: start;
+            margin-bottom: -20px;
+            font-size: 4rem;
+            font-weight: 100;
+            color: #ffff;
+            text-transform: uppercase;
+            background: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            line-height: 1;
+            padding: 0;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .container {
+        margin: auto;
+        max-width: 1300px;
+
+        .grid {
+            .details {
+                > p {
+                    width: 100%;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #c2c3c5;
+                    font-size: 18px;
+                    width: 70%;
+                    margin: 20px auto;
+                    line-height: 1.4;
+
+                    span {
+                        font-size: 19px;
+                        display: inline-block;
+                        line-height: 1.3;
+                        font-weight: 300;
+                        color: #c2c3c5;
+                        margin-bottom: 8px;
+                    }
+                }
+
+                button {
+                    background-color: #fff;
+                    color: #141b22;
+                    margin-right: 0;
+                    padding: 12px 24px 12px 24px;
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 18px;
+                    font-family: 'Bakbak One';
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

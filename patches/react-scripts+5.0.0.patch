@@ -1,0 +1,30 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index 2b1b3bb..129b77d 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -343,6 +343,15 @@ module.exports = function (webpackEnv) {
+           babelRuntimeRegenerator,
+         ]),
+       ],
++      fallback: {
++        "https": require.resolve("https-browserify"),
++        "os": require.resolve("os-browserify/browser"),
++        "url": require.resolve("url/"),
++        "stream": require.resolve("stream-browserify"),
++        "assert": require.resolve("assert/"),
++        "http": require.resolve("stream-http"),
++        "buffer": require.resolve('buffer/'),
++      },
+     },
+     module: {
+       strictExportPresence: true,
+@@ -786,6 +795,9 @@ module.exports = function (webpackEnv) {
+             },
+           },
+         }),
++      new webpack.ProvidePlugin({
++        Buffer: ['buffer', 'Buffer'],
++      }),
+     ].filter(Boolean),
+     // Turn off performance processing because we utilize
+     // our own hints via the FileSizeReporter

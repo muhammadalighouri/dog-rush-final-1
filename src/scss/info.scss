@@ -1,0 +1,75 @@
+@import './variable.scss';
+@import './media.scss';
+
+.info__outer {
+    & + div {
+        display: none;
+    }
+    .info {
+        padding: 60px 0;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+
+            .heading {
+                h1 {
+                    font-size: 3.5rem;
+                    line-height: 100%;
+                    font-weight: 700;
+                    line-height: 118%;
+                    text-transform: uppercase;
+                    text-align: center;
+                    position: relative;
+                    font-size: clamp(3rem, 6vw, 5rem);
+                    font-family: 'Exo 2';
+                }
+
+                p {
+                    text-align: center;
+                    width: 70%;
+                    margin-bottom: 80px;
+                    margin: 15px auto 30px;
+                    font-size: 18px;
+
+                    line-height: 1.2;
+
+                    @include md {
+                        width: 90%;
+                    }
+
+                    @include md {
+                        font-size: 14px;
+                        line-height: 1.3;
+                    }
+                }
+            }
+            .grid {
+                margin: 15px auto 0;
+                width: 65%;
+                video {
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0 0 15px #46444400;
+                }
+            }
+        }
+    }
+}
+
+.info__outer + div {
+    display: none;
+}
+
+.outer {
+    > img {
+        filter: hue-rotate(357deg) brightness(0.5) !important;
+    }
+}

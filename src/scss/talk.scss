@@ -1,0 +1,16 @@
+@import './variable.scss';
+@import './media.scss';
+
+.talk {
+    padding: 100px 10px;
+    position: relative;
+    z-index: 5;
+    .container {
+        max-width: 1200px;
+        padding: 70px 50px;
+        margin: auto;
+        background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+        border: 1px solid #0085ff2e;
+        border-radius: 32px;
+    }
+}

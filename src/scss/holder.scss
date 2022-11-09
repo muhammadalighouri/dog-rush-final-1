@@ -1,0 +1,105 @@
+@import './variable.scss';
+@import './media.scss';
+
+.holder {
+    padding: 90px 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    // background: #a71a11;
+
+    .heading {
+        h1 {
+            position: relative;
+            font-size: 4rem;
+            font-weight: 100;
+            color: #ffff;
+            text-transform: uppercase;
+            display: block;
+            line-height: 1;
+            padding: 0;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+    }
+
+    .container {
+        margin: auto;
+        max-width: 1300px;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 1.5rem;
+            .item:nth-child(3) {
+                &::before {
+                    opacity: 1;
+                    transition: all 0.3s ease;
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    top: 0px;
+                    left: 0px;
+                    border-left: 5px solid #fff;
+                    border-top: 5px solid #fff;
+                    z-index: 13;
+                }
+
+                &::after {
+                    opacity: 1;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: 0px;
+                    right: 0px;
+                    border-right: 5px solid #fff;
+                    border-bottom: 5px solid #fff;
+                }
+            }
+            .item {
+                padding: 30px 20px;
+                position: relative;
+                border: 0;
+                max-width: 475px;
+                width: 100%;
+                background: #04111d;
+                border-radius: 0px;
+                z-index: 12;
+                box-shadow: 0 5px 20px #00000017;
+                img {
+                    margin-bottom: 10px;
+                }
+                span {
+                    position: absolute;
+                    top: 7px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-family: 'Bakbak One';
+                    font-weight: 400;
+                    font-size: 80px;
+                    color: #fff;
+                    opacity: 0.3;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+                p {
+                    width: 100%;
+                    color: #c2c3c5;
+                    font-size: 16px;
+                    text-align: start;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}

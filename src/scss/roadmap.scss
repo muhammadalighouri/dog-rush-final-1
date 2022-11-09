@@ -1,0 +1,39 @@
+@import './variable.scss';
+@import './media.scss';
+
+.page-roadmap {
+    .heading {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        margin-top: 100px;
+        h1 {
+            font-size: 3.5rem;
+            line-height: 100%;
+            font-weight: 700;
+            line-height: 118%;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            font-size: clamp(4rem, 6vw, 6rem);
+            color: #fff;
+            font-family: 'Exo 2';
+        }
+
+        p {
+            text-align: center;
+            width: 60%;
+            margin-bottom: 80px;
+            margin: 15px auto 30px;
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            opacity: 0.9 !important;
+            @include md {
+                font-size: 16px;
+                width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "nft-magics-contracts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "truffle compile --all",
+        "build": "truffle compile --all",
+        "migrate": "truffle migrate --reset",
+        "deploy": "truffle migrate --reset"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@chainlink/contracts": "^0.5.1",
+        "@openzeppelin/contracts": "^4.7.3",
+        "@truffle/hdwallet-provider": "^2.0.15",
+        "dotenv": "^16.0.2",
+        "esm": "^3.2.25"
+    },
+    "devDependencies": {
+        "fs": "^0.0.1-security",
+        "truffle": "^5.5.32"
+    }
+}

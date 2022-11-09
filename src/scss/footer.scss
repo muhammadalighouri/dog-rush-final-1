@@ -1,0 +1,95 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+footer {
+    position: relative;
+    user-select: none;
+    background: #081827;
+
+    >.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 12px 10px 8px;
+
+        >.grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include md {
+                flex-direction: column-reverse;
+            }
+
+            p {
+                text-align: center;
+                color: #fff;
+                font-weight: 500;
+                font-size: 18px;
+                display: flex;
+                gap: 0px 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 1.3rem;
+                flex-direction: row-reverse;
+
+                >p {
+                    @include md {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                @include md {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
+                >.nav__btns {
+                    justify-self: center;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin: 10px 0;
+
+                    a:nth-child(1) {
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    a:nth-child(2) {
+                        svg {
+                            width: 25px;
+                        }
+                    }
+
+                    a:nth-child(3) {
+                        svg {
+                            width: 27px;
+                            height: 28px;
+                        }
+                    }
+
+                    a:nth-child(4) {
+                        svg {
+                            width: 25px;
+                            height: 21px;
+                        }
+                    }
+
+                    a:nth-child(5) {
+                        svg {
+                            width: 35px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@import './variable.scss';
+@import './media.scss';
+
+.cards {
+    // display: none;
+    padding: 60px 15px;
+    .heading {
+        h1 {
+            font-size: 8rem;
+            margin-bottom: 3rem;
+            line-height: 1;
+            display: block;
+            font-weight: 100;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 11px #00000026;
+            text-align: center;
+            color: #ffffff;
+            @include md {
+                font-size: 6rem;
+            }
+        }
+    }
+    .container {
+        max-width: 1300px;
+        margin: auto;
+        > p {
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Kaulen' !important;
+            font-weight: 100;
+            @include md {
+                font-size: 2rem;
+            }
+        }
+        .cards__grid {
+            place-items: center;
+            padding: 50px;
+            @include md {
+                padding: 25px;
+                margin-top: 20px;
+            }
+            .item {
+                position: relative;
+                max-width: 600px;
+                margin: auto;
+                video {
+                    border-radius: 20px;
+                    border: 3px solid #ff9130;
+                    display: flex;
+                    background: black;
+                    padding: 20px 60px;
+                    width: 100%;
+                    @include md {
+                        padding: 0;
+                    }
+                }
+                span {
+                    position: absolute;
+                }
+                .one {
+                    top: -20px;
+                    right: -20px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    background: transparent;
+                    padding: 5px;
+                    border-radius: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-top: 4px solid #ff9130;
+                    border-right: 4px solid #ff8f2f;
+                    border-top-right-radius: 15px;
+                }
+                .two {
+                    top: -20px;
+                    left: -20px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    background: transparent;
+                    padding: 5px;
+                    border-radius: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-top: 4px solid #ff9130;
+                    border-left: 4px solid #ff8f2f;
+                    border-top-left-radius: 15px;
+                }
+                .three {
+                    bottom: -20px;
+                    right: -20px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    background: transparent;
+                    padding: 5px;
+                    border-radius: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-bottom: 4px solid #ff9130;
+                    border-right: 4px solid #ff8f2f;
+                    border-bottom-right-radius: 15px;
+                }
+                .four {
+                    bottom: -20px;
+                    left: -20px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    background: transparent;
+                    padding: 5px;
+                    border-radius: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-bottom: 4px solid #ff9130;
+                    border-left: 4px solid #ff8f2f;
+                    border-bottom-left-radius: 15px;
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: var(
+        --swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 8px)
+    );
+    height: var(
+        --swiper-pagination-bullet-height,
+        var(--swiper-pagination-bullet-size, 8px)
+    );
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+    height: 20px !important;
+    width: 20px !important;
+    background: #a71a11;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    background: #ff9130 !important;
+    opacity: 1 !important;
+}

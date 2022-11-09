@@ -1,0 +1,14 @@
+{
+    "presale": {
+        "1": "0xAcf9adA6BC9e74d544556647355cB6570Ac1BC8A",
+        "5": "0x876BfbF876630cBEe634A29cd23a7c5BA0c91396"
+    },
+    "token": {
+        "1": "0x2d6e9d6b362354a5Ca7b03581Aa2aAc81bb530Db",
+        "5": "0xb7a766bd51BD8e3cD1De2380de7ddDd460E0D4A7"
+    },
+    "usdt": {
+        "1": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "5": "0x22Aef93c420011CcEc4DB8dc3034C3Dd445DE613"
+    }
+}
