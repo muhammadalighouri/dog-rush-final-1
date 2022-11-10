@@ -93,7 +93,7 @@ const NavigationSec = ({ text, style }) => {
                             <a href="https://www.instagram.com/dogerush/" target="_blank">
                                 <Instagram />
                             </a>
-                            <a href="https://t.me/dogerushchat" target="_blank">
+                            <a href="https://t.me/dogerushcommunity" target="_blank">
                                 <Telegram />
                             </a>
                             <a

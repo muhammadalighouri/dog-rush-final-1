@@ -30,7 +30,9 @@ const Main = () => {
                                 Buy Now
                             </button>
                             <button>Whitepaper</button>
-                            <button>Telegram</button>
+                            <button onClick={() =>
+                                window.open("https://t.me/dogerushcommunity", "_blank")
+                            }>Telegram</button>
                         </div>
                     </div>
                 </div>

@@ -126,7 +126,7 @@ const Navigation = () => {
                                             <Instagram />
                                         </a>
                                         <a
-                                            href='https://t.me/dogerushchat'
+                                            href='https://t.me/dogerushcommunity'
                                             target='_blank' rel='noreferrer'
                                         >
                                             <Telegram />
@@ -193,9 +193,9 @@ const Navigation = () => {
                 style={
                     modal
                         ? {
-                              transform: '  translate(-50%, -50%)  scale(1)',
-                              opacity: '1',
-                          }
+                            transform: '  translate(-50%, -50%)  scale(1)',
+                            opacity: '1',
+                        }
                         : {}
                 }
             >
