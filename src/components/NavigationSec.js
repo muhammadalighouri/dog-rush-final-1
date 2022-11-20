@@ -6,6 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaRedditAlien, FaTiktok } from "react-icons/fa";
 import { links } from "../assests/data";
 import { FaInstagram } from "react-icons/fa";
+import PDF from './WhitePaper_2.pdf'
 import {
     DiscFullRounded,
     Instagram,
@@ -67,11 +68,9 @@ const NavigationSec = ({ text, style }) => {
                                 <Link to={"/buy"}>Buy Now</Link>
                             </li>
                             <li>
-                                <Link to={"/buy"}>Whitepaper</Link>
+                                <a href={PDF} >Whitepaper</a>
                             </li>
-                            <li>
-                                <Link to={"/buy"}>Telegram</Link>
-                            </li>
+
                             <li>
                                 <Link to={"/disclaimer"}>Disclaimer</Link>
                             </li>

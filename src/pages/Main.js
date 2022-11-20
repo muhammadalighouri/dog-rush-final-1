@@ -30,7 +30,10 @@ const Main = () => {
                             <button onClick={() => navigate('/buy')}>
                                 Buy Now
                             </button>
-                            <a href={PDF} >Whitepaper</a>
+                            <a href={PDF} style={{
+                                fontSize: '18px',
+                                fontFamily: '\'Barlow-medium\''
+                            }}>Whitepaper</a>
                             <button onClick={() =>
                                 window.open("https://t.me/dogerushcommunity", "_blank")
                             }>Telegram</button>
