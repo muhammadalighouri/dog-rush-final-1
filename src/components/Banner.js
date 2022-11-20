@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../scss/banner.scss'
 import '../scss/glitch.scss'
+import PDF from './WhitePaper_2.pdf'
 const Banner = ({ timeline, ease }) => {
     useEffect(() => {
         AOS.init({})
@@ -44,9 +45,10 @@ const Banner = ({ timeline, ease }) => {
                                     <span>Buy Now</span>
                                 </button>
                                 <button>
-                                    <span onClick={() => navigate('/home')}>
-                                        Whitepaper
-                                    </span>
+                                    <a style={{
+                                        fontFamily: '\'Barlow-medium\'',
+                                        fontSize: '18px'
+                                    }} href={PDF} >Whitepaper</a>
                                 </button>
                             </div>
                         </div>

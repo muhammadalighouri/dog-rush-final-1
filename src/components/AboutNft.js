@@ -76,7 +76,7 @@ const AboutNft = () => {
                             <div className="btns">
                                 <a
                                     style={{ display: "inline-block" }}
-                                    href="https://t.me/dogerushchat"
+                                    href="https://t.me/DogeRushCommunity"
                                     target={"_blank"}
                                     class="item-desc aos-init aos-animate"
                                     data-aos="notific-right"
@@ -137,7 +137,7 @@ const AboutNft = () => {
                             <div className="btns">
                                 <a
                                     style={{ display: "inline-block" }}
-                                    href="https://t.me/dogerushchat"
+                                    href="https://t.me/DogeRushCommunity"
                                     target={"_blank"}
                                     class="item-desc aos-init aos-animate"
                                     data-aos="notific-right"
@@ -192,7 +192,7 @@ const AboutNft = () => {
                             <div className="btns">
                                 <a
                                     style={{ display: "inline-block" }}
-                                    href="https://t.me/dogerushchat"
+                                    href="https://t.me/DogeRushCommunity"
                                     target={"_blank"}
                                     class="item-desc aos-init aos-animate"
                                     data-aos="notific-right"

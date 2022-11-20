@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import NavigationSec from '../components/NavigationSec'
 import '../scss/glitch.scss'
 import '../scss/main.scss'
+import PDF from './WhitePaper_2.pdf'
 const Main = () => {
     const [navToggler, setNavToggler] = useState(false)
     function barBtn() {
@@ -29,7 +30,7 @@ const Main = () => {
                             <button onClick={() => navigate('/buy')}>
                                 Buy Now
                             </button>
-                            <button>Whitepaper</button>
+                            <a href={PDF} >Whitepaper</a>
                             <button onClick={() =>
                                 window.open("https://t.me/dogerushcommunity", "_blank")
                             }>Telegram</button>
