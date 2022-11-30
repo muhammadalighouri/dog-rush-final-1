@@ -4,7 +4,7 @@ import { useFormFields, useMailChimpForm } from 'use-mailchimp-form'
 
 export default function App() {
     const url =
-        'https://gmail.us21.list-manage.com/subscribe/post?u=1507b1926cf16506d47fa358f&amp;id=0a2bec43c4&amp;f_id=0043c3e1f0'
+        'https://thetravelingdiarytour.us17.list-manage.com/subscribe/post?u=8a57cbfc52f621ac676850200&amp;id=77316c631a&amp;f_id=00d12ae0f0'
     // The url looks like the url below:
     // https://aaaaaaaaa.us20.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxx&amp;id=yyyyyyyyyy
     const { loading, error, success, message, handleSubmit } =
@@ -47,7 +47,6 @@ export default function App() {
                     <div className='item'>
                         <input
                             id='FNAME'
-                            autoFocus
                             type='text'
                             placeholder='Enter First Name'
                             value={fields.FNAME}
@@ -57,7 +56,6 @@ export default function App() {
                     <div className='item'>
                         <input
                             id='LNAME'
-                            autoFocus
                             type='text'
                             placeholder='Enter Last Name'
                             value={fields.LNAME}
@@ -67,27 +65,7 @@ export default function App() {
                 </div>
                 <div className='second'>
                     <input
-                        id='MMERGE5'
-                        autoFocus
-                        type='number'
-                        placeholder='Country Code'
-                        value={fields.MMERGE5}
-                        onChange={handleFieldChange}
-                    />
-
-                    <div className='item'>
-                        <input
-                            id='PHONE'
-                            autoFocus
-                            type='number'
-                            placeholder='Enter Phone Number'
-                            value={fields.PHONE}
-                            onChange={handleFieldChange}
-                        />
-                    </div>
-                    <input
                         id='EMAIL'
-                        autoFocus
                         type='email'
                         placeholder='Enter Email'
                         value={fields.EMAIL}
@@ -95,26 +73,6 @@ export default function App() {
                     />
                 </div>
                 <div className='third'>
-                    <select
-                        id='MMERGE7'
-                        value={fields.MMERGE7}
-                        onChange={handleFieldChange}
-                    >
-                        {amount.map((item, i) => {
-                            return (
-                                <option value={item.value}>{item.value}</option>
-                            )
-                        })}
-                    </select>
-                    <select
-                        id='MMERGE3'
-                        value={fields.MMERGE3}
-                        onChange={handleFieldChange}
-                    >
-                        <option value='Morning'>Morning</option>
-                        <option value='Afternoon'>Afternoon</option>
-                        <option value='Evening'>Evening</option>
-                    </select>
                     <button>Submit!</button>
                 </div>
             </form>

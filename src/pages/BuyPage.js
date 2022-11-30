@@ -17,12 +17,13 @@ const BuyPage = () => {
         background: '#113c5a',
 
     }
-    window.scrollTo(0, 0)
+    window.scroll(0, 0)
     return (
         <>
             <NavigationSec text='CONNECT WALLET' />
             <MintContainer />
             <BuyPageInfo MintGrid={MintGrid} />
+
             <Footer stylo={stylo} />
         </>
     )

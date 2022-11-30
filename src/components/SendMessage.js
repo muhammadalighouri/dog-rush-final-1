@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { codes } from '../assests/Code'
-import Mail2 from "../components/Mail2";
+import Mail from "../components/Mail";
 const SendMessage = () => {
     const [selectedOptionBottomCountryCode, setSelectedOptionCountryCode] =
         useState()
@@ -46,11 +46,11 @@ const SendMessage = () => {
             label: 'Afternoon',
         },
         {
-            value: '',
+            value: 'Evening',
             label: 'Evening',
         },
     ]
-
+    // window.scroll(0,0)
     return (
         <div className='fourth'>
             <div className='heading'>
@@ -61,7 +61,7 @@ const SendMessage = () => {
                 </p>
             </div>
             <div className='grid'>
-                <Mail2 />
+                <Mail />
                 {/* <div className='first'>
                     <div className='item'>
                         <input type='text' placeholder='Enter First Name' />

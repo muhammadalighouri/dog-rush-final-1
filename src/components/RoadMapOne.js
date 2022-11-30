@@ -61,7 +61,7 @@ function RoadMapOne(props) {
         },
     ]
     return (
-        <div className='page-roadmap'>
+        <div className='page-roadmap' id='roadmap'>
             <div className='heading' style={{ overflow: 'hidden' }}>
                 <h1 data-aos='fade-down' class='aos-init aos-animate'>
                     ROADMAP

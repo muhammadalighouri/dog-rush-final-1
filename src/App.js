@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import BuyPage from './pages/BuyPage'
+import Claim from './pages/Claim'
 import Disclaimer from './pages/Disclaimer'
 import Home from './pages/Home'
 import Main from './pages/Main'
@@ -31,6 +32,7 @@ function App() {
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/privacy-policy" element={<Privacy />} />
                     <Route path="/disclaimer" element={<Disclaimer />} />
+                    <Route path="/claim" element={<Claim />} />
                 </Routes>
             </main>
         </>

@@ -667,6 +667,10 @@
                             right: 5px;
                             height: 80%;
                             text-transform: uppercase;
+                            transition: .3s all;
+                            &:hover{
+                                background: #2c82c9;
+                            }
                         }
                     }
                 }
@@ -714,6 +718,11 @@
                             right: 5px;
                             height: 80%;
                             text-transform: uppercase;
+                            transition: .3s all;
+                            
+                                &:hover {
+                                    background: #2c82c9;
+                                }
                         }
                     }
                 }

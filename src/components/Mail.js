@@ -8,7 +8,7 @@ const checkBox = () => {
             <div className="grid">
 
                 <Mailchimp
-                    action="https://gmail.us21.list-manage.com/subscribe/post?u=1507b1926cf16506d47fa358f&amp;id=0a2bec43c4&amp;f_id=0043c3e1f0"
+                    action="https://thetravelingdiarytour.us17.list-manage.com/subscribe/post?u=8a57cbfc52f621ac676850200&amp;id=77316c631a&amp;f_id=00d12ae0f0"
                     fields={[
                         {
                             name: "FNAME",

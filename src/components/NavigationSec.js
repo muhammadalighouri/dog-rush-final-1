@@ -68,6 +68,9 @@ const NavigationSec = ({ text, style }) => {
                                 <Link to={"/buy"}>Buy Now</Link>
                             </li>
                             <li>
+                                <Link to={"/claim"}>Claim</Link>
+                            </li>
+                            <li>
                                 <a href={PDF} >Whitepaper</a>
                             </li>
 

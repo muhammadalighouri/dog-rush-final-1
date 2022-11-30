@@ -59,7 +59,7 @@ const MintGrid = () => {
     const [ethPrice, setEthPrice] = useState()
 
     const [inputValues, setInputValues] = useState(initialInputValues)
-
+    console.log(totalInvestment);
     useEffect(() => {
         setInputValues(initialInputValues)
     }, [selectedOptionTop])
@@ -79,7 +79,7 @@ const MintGrid = () => {
     }
 
     useEffect(() => {
-        ;(async () => {
+        ; (async () => {
             try {
                 loadTokenPrices()
                 loadTotalInvestment()
@@ -394,7 +394,7 @@ const MintGrid = () => {
                                                 <img
                                                     src={
                                                         selectedOptionTop?.label ==
-                                                        'USDT'
+                                                            'USDT'
                                                             ? 'images/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png'
                                                             : 'images/1027.png'
                                                     }
@@ -409,7 +409,7 @@ const MintGrid = () => {
                                                     value: 'ETH',
                                                 }}
                                                 onChange={setSelectedOptionTop}
-                                                // menuIsOpen={true}
+                                            // menuIsOpen={true}
                                             />
                                         </div>
                                         <div className='mid'>
@@ -454,8 +454,8 @@ const MintGrid = () => {
                                             Purchased:&nbsp;
                                             {account
                                                 ? returnToZeroString(
-                                                      balances?.humanFriendlyRaisedBalance,
-                                                  )
+                                                    balances?.humanFriendlyRaisedBalance,
+                                                )
                                                 : 'Wallet not connected'}
                                         </span>
                                     </div>
@@ -527,7 +527,7 @@ const MintGrid = () => {
                                     </div>
                                 ) : (
                                     <div
-                                        onClick={pending ? () => {} : handleBuy}
+                                        onClick={pending ? () => { } : handleBuy}
                                         className='btns'
                                     >
                                         <button>
@@ -554,14 +554,14 @@ const MintGrid = () => {
                             <p>
                                 USDT Raised: $
                                 {totalInvestment &&
-                                trimToDecimalPlaces(
-                                    Web3.utils.fromWei(totalInvestment),
-                                    2,
-                                )
+                                    trimToDecimalPlaces(
+                                        Web3.utils.fromWei(totalInvestment),
+                                        2,
+                                    )
                                     ? trimToDecimalPlaces(
-                                          Web3.utils.fromWei(totalInvestment),
-                                          2,
-                                      )
+                                        Web3.utils.fromWei(totalInvestment),
+                                        2,
+                                    )
                                     : '0.0'}{' '}
                                 / $2,500,000
                             </p>

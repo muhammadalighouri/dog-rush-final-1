@@ -1,18 +1,18 @@
 export const nav = [
     {
         name: 'About',
-        path: '#about',
+        path: 'home#about',
         ref: 'nav2',
     },
     {
         name: 'Roadmap',
-        path: '#roadmap',
+        path: 'home#roadmap',
         ref: 'nav1',
     },
 
     {
         name: 'FAQs',
-        path: '#faq',
+        path: 'home#faq',
         ref: 'nav4',
     },
 ]
